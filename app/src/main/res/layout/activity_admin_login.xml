@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.AdminLoginActivity">
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:background="@drawable/border1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_login_head"
+            android:layout_marginTop="30dp"
+            android:text="Admin Login"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_500"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/email"
+            android:layout_below="@id/textView_login_head"
+            android:hint="Admin Email"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:drawablePadding="8dp"
+            android:layout_marginTop="30dp"
+            android:autofillHints="none"
+            android:inputType="textEmailAddress"
+            android:padding="6dp"
+            android:textSize="16sp"
+            android:background="@drawable/border"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/pwd"
+            android:layout_below="@id/email"
+            android:hint="Admin Password"
+            android:inputType="textPassword"
+            android:layout_marginTop="15dp"
+            android:autofillHints="none"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:drawablePadding="8dp"
+            android:padding="6dp"
+            android:textSize="16sp"
+            android:background="@drawable/border"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/AdminBtn"
+            android:text="Login"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/pwd"
+            app:cornerRadius="20dp"/>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1034635133790",
+    "project_id": "sub-voting-system",
+    "storage_bucket": "sub-voting-system.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1034635133790:android:7dbc3e4a28c93d42f9c5cf",
+        "android_client_info": {
+          "package_name": "edu.sub.subvotingsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1034635133790-f44o39lrd0o68pkp1mimvrqg05j5jn6g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnHwg8WVyrMkru9e3IRPi_KyAP-Vk0hnI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1034635133790-f44o39lrd0o68pkp1mimvrqg05j5jn6g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

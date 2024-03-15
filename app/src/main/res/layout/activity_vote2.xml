@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VoteActivity">
+
+    <TextView
+        android:id="@+id/textView_voter_portal_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:text="Voter Portal"
+        android:textColor="@color/purple_500"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/grid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textView_voter_portal_head"
+        android:layout_marginTop="20dp"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_centerInParent="true">
+
+        <!--Vote Now-->
+        <!--Result-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_voteNow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:layout_weight="1"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_baseline_fingerprint_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Vote Now!"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/candidateId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            app:cardCornerRadius="8dp"
+            android:layout_weight="1"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:padding="20dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_baseline_widgets_24"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Candate"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</RelativeLayout>
